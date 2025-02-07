@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 movement = new Vector3(movementX, 0.0f, movementY);
         rb.AddForce(movement * speed);
-        
+        OutOfBounds();
     }
 
     void OnTriggerEnter(Collider other)
@@ -74,4 +74,13 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    public void OutOfBounds()
+    {
+        if (gameObject.transform.position.y < 0)
+        {
+            Destroy(gameObject);
+            winTextObject.gameObject.SetActive(true);
+            winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
+        }
+    }
 }
