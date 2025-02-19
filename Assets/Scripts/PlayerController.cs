@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 0;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+    public AudioSource pickup;
 
 
 
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         SetCountText();
         winTextObject.SetActive(false);
+        pickup = GetComponent<AudioSource>();
     }
 
     void OnMove(InputValue movementValue)
@@ -59,6 +61,7 @@ public class PlayerController : MonoBehaviour
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
+            pickup.Play(); // play Pickup sound
         }
 
     }
@@ -68,9 +71,9 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
-
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
+            collision.gameObject.GetComponent<AudioSource>().Play();
         }
     }
 
