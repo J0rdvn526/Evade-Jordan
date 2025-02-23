@@ -15,8 +15,13 @@ public class PlayerController : MonoBehaviour
     public float speed = 0;
     public TextMeshProUGUI countText;
     public GameObject winTextObject;
+
+    // Audio
     public AudioSource pickup;
 
+    // VFX
+    public GameObject explosionFX;
+    public GameObject pickupFX;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -58,6 +63,8 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PickUp"))
         {
+            var currentPickupFX = Instantiate(pickupFX, other.transform.position, Quaternion.identity);
+            Destroy(currentPickupFX, 3);
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
@@ -73,6 +80,7 @@ public class PlayerController : MonoBehaviour
             Destroy(gameObject);
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
+            Instantiate(explosionFX, transform.position, Quaternion.identity);
             collision.gameObject.GetComponent<AudioSource>().Play();
         }
     }
