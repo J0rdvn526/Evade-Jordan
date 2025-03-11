@@ -3,6 +3,7 @@ using UnityEngine.AI;
 
 public class EnemyMovement : MonoBehaviour
 {
+    // public Transform player = SpawningBehaviour.player.transform;
     public Transform player;
     private NavMeshAgent navMeshAgent;
 

@@ -90,6 +90,9 @@ public class PlayerController : MonoBehaviour
     {
         if (gameObject.transform.position.y < 0)
         {
+            var currentExplosionFX = Instantiate(explosionFX, transform.position, Quaternion.identity);
+            Destroy(currentExplosionFX, 4);
+            gameObject.GetComponent<AudioSource>().Play();
             Destroy(gameObject);
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";

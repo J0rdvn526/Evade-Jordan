@@ -3,6 +3,7 @@ using UnityEngine;
 public class CameraController : MonoBehaviour
 {
     public GameObject player;
+    // public GameObject player = SpawningBehaviour.player;
     private Vector3 offset;
  
 
