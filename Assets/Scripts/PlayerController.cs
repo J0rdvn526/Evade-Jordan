@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
             winTextObject.gameObject.SetActive(true);
             winTextObject.GetComponent<TextMeshProUGUI>().text = "You Lose!";
             collision.gameObject.GetComponent<AudioSource>().Play();
+            collision.gameObject.GetComponentInChildren<Animator>().SetFloat("speed_f", 0);
         }
     }
 
