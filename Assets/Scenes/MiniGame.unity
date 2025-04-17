@@ -1210,7 +1210,7 @@ GameObject:
   - component: {fileID: 286672274}
   - component: {fileID: 286672273}
   - component: {fileID: 286672272}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Internal Wall 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2069,7 +2069,7 @@ GameObject:
   - component: {fileID: 541960376}
   - component: {fileID: 541960375}
   - component: {fileID: 541960374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ramp 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2621,7 +2621,7 @@ GameObject:
   - component: {fileID: 660289005}
   - component: {fileID: 660289004}
   - component: {fileID: 660289008}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4195,7 +4195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 850851921}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ramp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5113,7 +5113,7 @@ GameObject:
   - component: {fileID: 982116980}
   - component: {fileID: 982116979}
   - component: {fileID: 982116981}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tower 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5544,7 +5544,7 @@ GameObject:
   - component: {fileID: 1058750141}
   - component: {fileID: 1058750140}
   - component: {fileID: 1058750139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Divider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6372,7 +6372,7 @@ GameObject:
   - component: {fileID: 1253345273}
   - component: {fileID: 1253345272}
   - component: {fileID: 1253345271}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ramp 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7001,7 +7001,7 @@ GameObject:
   - component: {fileID: 1416313199}
   - component: {fileID: 1416313198}
   - component: {fileID: 1416313200}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tower 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9861,7 +9861,7 @@ GameObject:
   - component: {fileID: 1987048499}
   - component: {fileID: 1987048498}
   - component: {fileID: 1987048497}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bridge
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15376,7 +15376,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2103577851}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Towers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15449,7 +15449,7 @@ GameObject:
   - component: {fileID: 2138308286}
   - component: {fileID: 2138308285}
   - component: {fileID: 2138308284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Internal Wall 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
