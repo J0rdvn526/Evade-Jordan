@@ -6525,7 +6525,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'WASD/Arrow Keys
+  m_text: 'Mouse Click
 
 
     Esc
